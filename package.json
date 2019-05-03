@@ -1,0 +1,33 @@
+{
+  "name": "tennis-users-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "firebase": "^5.5.7",
+    "lodash": "^4.17.11",
+    "mixpanel-browser": "^2.26.0",
+    "moment": "^2.22.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-ga": "^2.5.7",
+    "react-mixpanel": "^1.0.1",
+    "react-quill": "^1.3.2",
+    "react-redux": "^5.1.0",
+    "react-redux-firebase": "^2.1.9",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.5",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-firestore": "^0.5.8",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.82.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
