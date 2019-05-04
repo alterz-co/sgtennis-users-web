@@ -15,6 +15,7 @@ import UserTournamentsEdit from './components/profile/tournaments/UserTournament
 import Players from './components/players/Players';
 import PlayerDetailsMale from './components/players/male/PlayerDetailsMale';
 import PlayerDetailsFemale from './components/players/female/PlayerDetailsFemale';
+import TournamentDetails from './components/tournaments/TournamentDetails';
 
 import * as ROUTES from './constants/routes';
 
@@ -39,6 +40,7 @@ class App extends Component {
               <Route path={ROUTES.PLAYERS} component={Players}/>
               <Route path={ROUTES.PLAYER_DETAILS_MALE} component={PlayerDetailsMale}/>
               <Route path={ROUTES.PLAYER_DETAILS_FEMALE} component={PlayerDetailsFemale}/>
+              <Route path={ROUTES.TOURNAMENT_DETAILS} component={TournamentDetails}/>
             </Switch>
           </div>
           <Footer/>
