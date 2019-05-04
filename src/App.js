@@ -4,6 +4,10 @@ import Navbar from './components/navigation/Navbar';
 import Footer from './components/navigation/Footer';
 import Landing from './components/landing/Landing';
 import Terms from './components/landing/Terms';
+import Home from './components/home/Home';
+import Register from './components/auth/Register';
+import Login from './components/auth/Login';
+import ResetPassword from './components/auth/ResetPassword';
 
 import * as ROUTES from './constants/routes';
 
@@ -17,6 +21,10 @@ class App extends Component {
             <Switch>
               <Route exact path={ROUTES.LANDING} component={Landing} />
               <Route exact path={ROUTES.TERMS} component={Terms} />
+              <Route exact path={ROUTES.REGISTER} component={Register} />
+              <Route exact path={ROUTES.LOGIN} component={Login} />
+              <Route exact path={ROUTES.PASSWORD_RESET} component={ResetPassword} />
+              <Route exact path={ROUTES.HOME} component={Home} />
             </Switch>
           </div>
           <Footer/>
