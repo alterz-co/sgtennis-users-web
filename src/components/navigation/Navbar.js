@@ -130,7 +130,7 @@ class NavAuth extends Component {
         </Menu.Item>
         <Menu.Menu position='right'>
           <Menu.Item as={Link} to={ROUTES.HOME} name='Tournaments'/>
-          <Menu.Item as={Link} to='' name='Players'/>
+          <Menu.Item as={Link} to={ROUTES.PLAYERS} name='Players'/>
           <Menu.Item>
             <Dropdown pointing='top right' text={this.props.profile.name || '👤'}>
               <Dropdown.Menu>
