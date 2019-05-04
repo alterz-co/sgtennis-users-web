@@ -5,6 +5,7 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import TournamentList from '../tournaments/TournamentList';
+import Announcements from '../announcements/Announcements';
 
 import * as ROUTES from '../../constants/routes';
 
@@ -24,6 +25,7 @@ class Home extends Component {
           <TournamentList organiserId={this.props.auth.uid} tournaments={this.props.tournaments}/>
         </Grid.Column>
         <Grid.Column width={4}>
+          <Announcements/>
         </Grid.Column>
         <Grid.Column width={1}></Grid.Column>
       </Grid>
