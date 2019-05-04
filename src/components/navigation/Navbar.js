@@ -134,7 +134,7 @@ class NavAuth extends Component {
           <Menu.Item>
             <Dropdown pointing='top right' text={this.props.profile.name || '👤'}>
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to='' icon='user' text='Your Profile'/>
+                <Dropdown.Item as={Link} to={ROUTES.PROFILE} icon='user' text='Your Profile'/>
                 <Dropdown.Item text='Logout' icon='power' onClick={() => this.props.logout()} />
               </Dropdown.Menu>
             </Dropdown>
