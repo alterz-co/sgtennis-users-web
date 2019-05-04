@@ -13,3 +13,4 @@ export const PLAYERS_MALE = '/players/male';
 export const PLAYERS_FEMALE = '/players/female';
 export const PLAYER_DETAILS_MALE = '/player/male/:id';
 export const PLAYER_DETAILS_FEMALE = '/player/female/:id';
+export const TOURNAMENT_DETAILS = '/tournament/:id';
