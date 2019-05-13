@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Grid, Header, Icon, Button } from 'semantic-ui-react';
+import { Grid, Header, Icon } from 'semantic-ui-react';
 import LoaderComponent from '../LoaderComponent';
 
 class TournamentHeader extends Component {
   render(){
-    const { tournamentId, tournament } = this.props;
+    const { tournament } = this.props;
 
     if(tournament){
       return(
@@ -16,11 +15,6 @@ class TournamentHeader extends Component {
             <Header.Subheader textAlign='left'>Time: {tournament.time}</Header.Subheader>
             <Header.Subheader textAlign='left'>Venue: {tournament.venue}</Header.Subheader>
             <a href={tournament.url} style={{ color: 'black' }}><Icon name='linkify' />Link</a>
-          </Grid.Column>
-          <Grid.Column width={3} style={{ paddingTop: 40 }}>
-            <Button as={Link} to={`/tournament/edit/${tournamentId}`} color='grey' fluid>
-              <Icon name='pencil' /> Edit
-            </Button>
           </Grid.Column>
         </Grid>
       )
