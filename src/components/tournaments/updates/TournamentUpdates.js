@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Container, Divider, Header, Feed } from 'semantic-ui-react';
-import moment from 'moment';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
@@ -39,7 +38,7 @@ class TournamentUpdates extends Component {
                     <Feed.User style={{ color: 'black', fontSize: 18 }}>{update.name}</Feed.User>
                   </Feed.Summary>
                   <Feed.Meta>
-                    <Feed.Date>{moment(update.createdAt.toDate()).calendar()}</Feed.Date>
+                    <Feed.Date>{update.createdAt}</Feed.Date>
                   </Feed.Meta>
                   <Feed.Extra text>
                     <div

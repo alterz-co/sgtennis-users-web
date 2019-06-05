@@ -131,7 +131,9 @@ class NavAuth extends Component {
         <Menu.Menu position='right'>
           <Menu.Item>
             <Button basic color='grey'>
-              <a style={{ color: 'grey' }} href="https://docs.google.com/forms/d/1231sadKrwZr91zSHIDoqralwniJGZ21fYYUQcvR3xpM/prefill">Report a Problem</a>
+              <a style={{ color: 'grey' }} href="https://docs.google.com/forms/d/1231sadKrwZr91zSHIDoqralwniJGZ21fYYUQcvR3xpM/prefill">
+                Report a Problem
+              </a>
             </Button>
           </Menu.Item>
           <Menu.Item as={Link} to={ROUTES.HOME} name='Tournaments'/>
